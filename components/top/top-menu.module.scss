@@ -1,0 +1,35 @@
+.container {
+  justify-content: flex-end;
+  border: none !important;
+  border-radius: unset !important;
+  box-shadow: unset !important;
+  padding: 20px 20px 0 0;
+}
+.container > a {
+  border-radius: unset !important;
+  border: none !important;
+  &:hover {
+    background: none !important;
+    & > i {
+      color: #000000;
+    }
+    & > .label {
+      opacity: 0.5;
+    }
+  }
+}
+.container > a::before {
+  background: none !important;
+}
+.container > a > i {
+  color: #a4a4a4;
+}
+.label {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+}
+.cart_menu {
+  position: relative;
+}

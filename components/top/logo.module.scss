@@ -1,0 +1,46 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.logo > div {
+  width: 100%;
+  text-align: center;
+}
+.main {
+  font-size: 5vh;
+  font-weight: bold;
+  -webkit-animation: moveOut 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: moveOut 1s; /* Firefox < 16 */
+  -ms-animation: moveOut 1s; /* Internet Explorer */
+  -o-animation: moveOut 1s; /* Opera < 12.1 */
+  animation: moveOut 1s;
+}
+.sub {
+  margin-top: 10px;
+  font-size: 16px;
+  -webkit-animation: moveIn 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: moveIn 1s; /* Firefox < 16 */
+  -ms-animation: moveIn 1s; /* Internet Explorer */
+  -o-animation: moveIn 1s; /* Opera < 12.1 */
+  animation: moveIn 1s;
+}
+@keyframes moveIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes moveOut {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
